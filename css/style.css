@@ -1,3 +1,21 @@
+/* KEYFRAMES */
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% { opacity: 1;}
+}
+
+/*@keyframes getDark {
+    0% {
+        background-image: linear-gradient(to top,  rgba(255, 255, 255, 0) 60%,  rgba(0, 0, 0, .3));
+    }
+    100% {
+        background-image: linear-gradient(to top,  rgba(255, 255, 255, 0) 60%,  rgba(0, 0, 0, .6));
+    }
+}*/
+
+/* RESET */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,4 +25,193 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    animation: fadeIn .7s ease-in-out;
+}
+
+/* MENU PRINCIPAL */
+
+.container {
+    width: 100%;
+    height: 6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(249, 237, 214, 0.6);
+    -webkit-backdrop-filter: saturate(100%) blur(5px);
+    -moz-backdrop-filter: saturate(100%) blur(5px);
+    -ms-backdrop-filter: saturate(100%) blur(5px);
+    backdrop-filter: saturate(100%) blur(5px);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.navMenu {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brandMark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navTitulo {
+    font-family: 'Sacramento', cursive;
+    font-size: 2.5em;
+    font-weight: lighter;
+    letter-spacing: 1.2px;
+    line-height: 1;
+}
+
+.brandMark hr {
+    width: 200px;
+    height: 1px;
+    background: #fff;
+    border: none;
+}
+
+.navSubTitulo {
+    padding: 6px 0 6px 5px;
+    font-size: .66em;
+    letter-spacing: 2.6px;
+    text-transform: uppercase;
+}
+
+.navMenuLinks {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navMenuItens a{
+    font-size: .85em;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .6s ease-in-out;
+}
+
+.navMenuItens a:hover {
+    color: #45271d;
+}
+
+/* SECTION BANNER */
+
+.banner {
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("../images/banner.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) rgba(0, 0, 0, 1));
+}
+
+.info {
+    width: 80%;
+    height: 50%;
+    display: flex;
+}
+
+.negocio {
+    justify-content: flex-start;
+}
+
+.quadroDeResumos {
+    margin-top: 9em;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resumos {
+    width: 32%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    border-radius: 15px;
+    cursor: context-menu;
+
+    background-color: rgba(249, 237, 214, 0);
+    background-image: -webkit-linear-gradient(to top,  transparent 60%,  rgba(0, 0, 0, .3));
+    background-image: -moz-linear-gradient(to top,  transparent 60%,  rgba(0, 0, 0, .3));
+    background-image: -ms-linear-gradient(to top,  transparent 60%,  rgba(0, 0, 0, .3));
+    background-image: linear-gradient(to top,  transparent 60%,  rgba(0, 0, 0, .3));
+
+    -webkit-transition: background-color .4s ease-in-out;
+    -moz-transition: background-color .4s ease-in-out;
+    -ms-transition: background-color .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.resumos:hover {
+    background-color: rgba(249, 237, 214, .4);
+}
+
+.resumos h3 {
+    margin: 15px 0;
+    width: 80%;
+    text-align: start;
+}
+
+.resumos p {
+    width: 80%;
+    text-align: center;
+}
+
+.resumos hr {
+    opacity: 0;
+    margin: 20px 0;
+    width: 0%;
+    height: 1px;
+    background: #fff;
+    border: none;
+    transition: all .6s ease-in-out;
+}
+
+.resumos:hover hr {
+    opacity: 1;
+    width: 60%;
+}
+
+.logo {
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+    color: #fff;
+}
+
+.logo h1 {
+    margin-top: .5em;
+    font-size: 6em;
+}
+
+.logo p {
+    width: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+/* SECTION INFO SERVIÇOS */
+
+.Servicos {
+    width: 100%;
+    height: 20em;
 }
