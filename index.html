@@ -4,8 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Felipe da Silva Oliveira">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" media="screen and (max-width: 760px)" href="css/media.css" >
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap" rel="stylesheet">
         <title>Na Prates - Confeitaria | Início</title>
     </head>
     <body>
@@ -30,18 +32,14 @@
                         <li class="navMenuItens">
                             <a href="contato.html">Contato</a>
                         </li>
-                        <li class="navMenuItens">
-                            <a href="sacola.html"><img src="" alt=""></a>
-                        </li>
                     </ul>
                 </nav>
             </div>
         </header>
-
         <main>
             <section class="banner">
                 <div class="info negocio">
-                    <ul class="quadroDeResumos">
+                    <ul class="quadroDeResumos rellax" data-rellax-speed="-2">
                         <li class="resumos resumo1">
                             <h3>Missão</h3>
                             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
@@ -60,32 +58,32 @@
                     </ul>
                 </div>
                 <div class="info logo">
-                    <h1>Na Prates.</h1>
-                    <p>Confeitaria Artesanal</p>
+                    <h1 class="rellax" data-rellax-speed="5">Na Prates.</h1>
+                    <p class="rellax" data-rellax-speed="2">Confeitaria Artesanal</p>
                 </div>
             </section>
             <section class="nossosDoces">
-                <div class="nossosDocesTexto">
+                <div class="nossosDocesTexto" data-aos="fade-right" data-aos-duration="1500">
                     <h2>- Nossos Doces -</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet porta massa a tristique. Vivamus vel leo aliquam, rutrum tellus at, aliquet enim. Proin ultricies imperdiet nisl vitae rutrum. Nam vel sollicitudin magna, quis lobortis libero. In venenatis ante quis maximus tristique. Aenean eleifend ex at egestas fermentum.</p>
                 </div>
                 <div class="nossosDocesImagens">
-                    <figure>
+                    <figure data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/bolos.jpg" alt="Imagem de um naked cake">
                         <figcaption>Bolos</figcaption>
                         <span>Lorem ipsum consectetur adipiscing elit. Pellentesque laoreet porta massa a tristique.</span>
                     </figure>
-                    <figure>
+                    <figure data-aos="fade-up" data-aos-duration="2000">
                         <img src="images/brigadeiros.jpg" alt="Imagem de brigadeiros">
                         <figcaption>Brigadeiros</figcaption>
                         <span>Lorem ipsum Pellentesque laoreet porta massa a tristique.</span>
                     </figure>
-                    <figure>
+                    <figure data-aos="fade-up" data-aos-duration="500">
                         <img src="images/docesfinos.jpg" alt="Imagem de um conjunto de doces finos">
                         <figcaption>Doces Finos</figcaption>
                         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                     </figure>
-                    <figure>
+                    <figure data-aos="fade-up" data-aos-duration="1500">
                         <img src="images/sobremesas.jpg" alt="Imagem de um bolo de chocolate">
                         <figcaption>Sobremesas</figcaption>
                         <span>Lorem ipsum adipiscing elit. Pellentesque a tristique.</span>
@@ -93,9 +91,11 @@
                 </div>
             </section>
         </main>
-
         <footer>
 
         </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
