@@ -7,6 +7,10 @@
     list-style: none;
 }
 
+main {
+    overflow: hidden;
+}
+
 /* keyframes */
 
 @keyframes fadeIn {
@@ -37,7 +41,7 @@ body {
     z-index: 1;
 }
 
-.navMenu {
+.navigationMenu {
     width: 80%;
     height: 100%;
     display: flex;
@@ -53,6 +57,10 @@ body {
     font-weight: 300;
     color: #8d503c;
     text-decoration: none;
+}
+
+#check {
+    display: none;
 }
 
 .navTitulo {
@@ -77,14 +85,14 @@ body {
     text-transform: uppercase;
 }
 
-.navMenuLinks {
+.pageList {
     width: 40%;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.navMenuItens a{
+.pageList a{
     font-size: .85em;
     font-weight: 600;
     color: #8d503c;
@@ -97,7 +105,7 @@ body {
     transition: all .4s ease-in-out;
 }
 
-.navMenuItens a:hover {
+.pageList a:hover {
     color: #e2cba0;
 }
 
@@ -226,6 +234,7 @@ body {
 /* section nossos doces */
 
 .nossosDoces {
+    margin-bottom: 50px;
     width: 100%;
     height: fit-content;
 }
@@ -314,4 +323,70 @@ body {
 .nossosDocesImagens span {
     width: 80%;
     text-align: center;
+}
+
+/* section galeria */
+
+.galeria {
+    padding: 30px 0 30px 0;
+    width: 100%;
+    height: fit-content;
+    background: #f9edd6;
+}
+
+.carousel-cell {
+    margin-right: 10px;
+    width: 80%; 
+    height: 500px; 
+    display: flex;
+    align-items: center;
+}
+
+.carousel-cell img {
+    width: 100%;
+}
+
+.flickity-page-dots {
+    bottom: 12px;
+}
+
+/* section servicos */
+
+.servicos,
+.servicosCartoes,
+.servicosCartoes li {
+    display: flex;
+}
+
+.servicos {
+    margin: 60px 0;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicosCartoes {
+    width: 80%;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.servicosCartoes li {
+    width: 26%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #8d503c;
+}
+
+.servicosCartoes h3 {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+.servicosCartoes img {
+    width: 60%;
 }
