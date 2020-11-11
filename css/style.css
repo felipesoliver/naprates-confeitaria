@@ -67,8 +67,11 @@ main {
     padding-bottom: 3px;
     font-size: 2.2em;
     font-weight: 200;
-    letter-spacing: 1.2px;
     line-height: 1;
+}
+
+.navTitulo span {
+    font-weight: 600;
 }
 
 .brandMark hr {
@@ -377,6 +380,7 @@ main {
     justify-content: flex-end;
     flex-direction: column;
     background: #dabf8f17;
+    border-radius: 15px;
     color: #fff;
 
     background-image: -webkit-linear-gradient( 225deg,  #f8d89b1a, #dabf8f 90%);
