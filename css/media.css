@@ -15,7 +15,7 @@
 /* menu navegação */
 
 .container {
-    background: #f9edd6af;
+    background: #f9edd6;
 }
 
 .brandMark {
@@ -113,7 +113,7 @@
     justify-content: center;
     flex-direction: column;
     border-top: solid 5px #fff;
-    background: #ce8e69;
+    background: #ce8e69f0;
 
     -webkit-backdrop-filter: blur(5px);
     -moz-backdrop-filter: blur(5px);
@@ -217,11 +217,15 @@
 }
 
 .logo h1 {
+    width: 100%;
+    text-align: center;
     font-size: 3.3em;
 }
 
 .logo p {
+    margin-bottom: 70px;
     width: 100%;
+    text-align: center;
     font-size: .7em;
 }
 

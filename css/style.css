@@ -118,7 +118,7 @@ main {
 
 .banner {
     width: 100%;
-    height: 105vh;
+    height: 120vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,13 +126,8 @@ main {
     background-image: url("../images/banner.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     border-bottom: solid 10px #f9edd6be;
-
-    -webkit-background-attachment: fixed;
-    -moz-background-attachment: fixed;
-    -ms-background-attachment: fixed;
-    background-attachment: fixed;
 }
 
 .info {
@@ -246,7 +241,7 @@ main {
 }
 
 .logo p {
-    margin-bottom: 70px;
+    margin-bottom: 170px;
     width: 50%;
     text-align: right;
     text-transform: uppercase;
