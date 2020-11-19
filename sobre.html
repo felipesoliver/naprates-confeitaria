@@ -4,20 +4,29 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Felipe da Silva Oliveira">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
-        <title>Na Prates - Confeitaria | Sobre Nós</title>
+        <link rel="stylesheet" href="css/media.css" media="screen and (max-width: 768px)">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap">
+        <title>Na Prates - Confeitaria | Sobre</title>
     </head>
     <body>
         <header>
             <div class="container">
-                <nav class="navMenu">
+                <nav class="navigationMenu">
                     <a class="brandMark" href="index.html">
-                        <h2 class="navTitulo">Na Prates</h2>
+                        <h2 class="navTitulo">Na <span>Prates</span></h2>
                         <hr>
                         <p class="navSubTitulo">Confeitaria Artesanal</p>
                     </a>
-                    <ul class="navMenuLinks">
+                    <input type="checkbox" id="check">
+                    <label for="check">
+                        <div class="menu-btn">
+                            <div class="menu-btn__burger"></div>
+                        </div>
+                    </label>
+                    <ul class="pageList">
                         <li class="navMenuItens">
                             <a href="index.html">Início</a>
                         </li>
@@ -25,25 +34,39 @@
                             <a href="catalogo.html">Catálogo</a>
                         </li>
                         <li class="navMenuItens">
-                            <a href="sobre.html">Sobre Nós</a>
+                            <a href="sobre.html">Sobre</a>
                         </li>
                         <li class="navMenuItens">
                             <a href="contato.html">Contato</a>
-                        </li>
-                        <li class="navMenuItens">
-                            <a href="sacola.html"><img src="" alt=""></a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </header>
-
         <main>
-
+            <section class="containerSobre">
+                <h2 data-aos="fade-down" data-aos-duration="2500">Sobre</h2>
+                <div class="infoSobre">
+                    <div class="quadroImgSobre" data-aos="fade-down" data-aos-duration="1500">
+                        <img class="imgSobre img1" src="images/n1.jpg" alt="Retrato da empreendedora">
+                        <img class="imgSobre img2" src="images/n2.jpg" alt="Retrato da empreendedora">
+                        <img class="imgSobre img3" src="images/n3.jpg" alt="Retrato da empreendedora">
+                    </div>
+                    <div class="textoSobre" data-aos="fade-up" data-aos-duration="1000">
+                        <h3>Recomeços</h3>
+                        <p>&nbsp; &nbsp; &nbsp;Tudo começou com os docinhos Gourmets da DNA Brigadeiro... Minha missão era criar conexão visual, mas sem perder a afetividade que só o doce caseiro pode proporcionar.</p>
+                        <p>&nbsp; &nbsp; &nbsp;Chegamos em 2020 e finalmente a minha visão ganhou sua verdadeira forma e personalidade.</p>
+                        <p>&nbsp; &nbsp; &nbsp;Mais que uma marca, a Ná Prates Confeitaria Artesanal representa tudo dessa mulher empreendedora que nasceu a partir dos bolos e doces. Carrega principalmente meus valores pessoais! Honestidade, empatia e uma vontade incessante de fazer a diferença na vida do outro podem não ser degustativos, mas tornam a experiência única quando agregada a um sabor inesquecível.</p>
+                    </div>
+                </div>
+            </section>
         </main>
-
-        <footer>
-
+        <footer data-aos="fade-in" data-aos-duration="1000">
+            <p class="copyright">&#169; 2020 Na Prates</p>
         </footer>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
