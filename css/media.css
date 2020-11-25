@@ -305,7 +305,9 @@
     margin-bottom: 0;
     position: absolute;
     top: 194px;
-    left: 54px;
+    left: 10%;
+    font-size: 1.1em;
+    font-weight: 600;
 }
 
 .infoSobre {
@@ -319,22 +321,27 @@
 }
 
 .imgSobre {
-    width: 47%;
+    width: 45%;
 }
 
 .img1 {
-    top: 70px;
+    top: 13%;
 }
 
 .img2 {
-    left: 170px;
+    left: 55%;
 }
 
 .img3 {
-    top: 250px;
-    left: 130px;
+    top: 48%;
+    left: 55%;
 }
 
 .textoSobre {
     width: 100%;
+}
+
+.textoSobre h3 {
+    font-size: 1.1em;
+    font-weight: 600;
 }
