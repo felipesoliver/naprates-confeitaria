@@ -247,9 +247,6 @@
     align-items: center;
 }
 
-.nossosDocesImagens img {
-}
-
 .nossosDocesImagens figure {
     width: 80%;
 }
@@ -259,9 +256,6 @@
 }
 
 /* section galeria */
-
-.galeria {
-}
 
 .carousel-cell {
     display: flex;
@@ -344,4 +338,34 @@
 .textoSobre h3 {
     font-size: 1.1em;
     font-weight: 600;
+}
+
+/* CONTATO */
+
+/* Section Contato */
+
+.contatoForm h2 {
+    width: 70%;
+}
+
+.contatoForm form {
+    width: 70%;
+}
+
+.botaoEnviar {
+    width: 35%;
+}
+
+/* Section Social */
+
+.social ul {
+    width: 70%;
+}
+
+.social li {
+    font-size: .8em;
+}
+
+.tituloSocial {
+    font-size: 1em;
 }

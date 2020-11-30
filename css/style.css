@@ -574,6 +574,129 @@ main {
     left: 125px;
 }
 
+/* CONTATO */
+
+.contatoForm {
+    margin-top: 6em;
+    padding: 3em 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #8d503c;
+}
+
+.contatoForm h2 {
+    margin-bottom: 2em;
+    width: 75%;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.contatoForm form {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.nomeESobrenome {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contatoForm input,
+.contatoForm textarea {
+    margin-bottom:15px;
+    padding: 8px;
+    font-family: 'Montserrat', sans-serif;;
+    font-size: 1em;
+    border-radius: 5px;
+    outline: none;
+    resize: none;
+}
+
+.inputA,
+.inputB {
+    color: #8d503c;
+    border: solid 1px #ecd2a5;
+}
+
+.inputA {
+    width: 49%;
+}
+
+.inputB {
+    width: 100%;
+}
+
+.inputA::-webkit-input-placeholder,
+.inputB::-webkit-input-placeholder {
+    color: #8d503c;
+}
+
+.botaoEnviar {
+    width: 25%;
+    background: #dfc69c;
+    background-image: linear-gradient(225deg, transparent, #af5734b2 130%);
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -ms-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+}
+
+.botaoEnviar:hover {
+    background: #8d503c;
+    color: #dfbf8a;
+}
+
+.social {
+    margin-bottom: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    color: #8d503c;
+}
+
+.social ul{
+    width: 50%;
+}
+
+.social li {
+    margin-bottom: 8px;
+    font-size: 1.2em;
+}
+
+.tituloSocial {
+    margin-bottom: 30px;
+    font-size: 1.4em;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.tituloSocial span {
+    letter-spacing: initial;
+}
+
+.social span {
+    font-weight: 700;
+}
+
 /* footer */
 
 footer {
