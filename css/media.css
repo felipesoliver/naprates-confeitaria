@@ -317,10 +317,7 @@
 
 .containerSobre h2 {
     margin-bottom: 0;
-    position: absolute;
-    top: 194px;
-    left: 10%;
-    font-size: 1.1em;
+    font-size: 1.4em;
     font-weight: 600;
 }
 
@@ -335,20 +332,32 @@
 }
 
 .imgSobre {
-    width: 45%;
+    width: 80%;
+
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    -ms-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.imgSobre:hover {
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    -ms-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
 }
 
 .img1 {
-    top: 13%;
+    display: none;
 }
 
 .img2 {
-    left: 55%;
+    top: 50%;
+    left: 50%;
 }
 
 .img3 {
-    top: 48%;
-    left: 55%;
+    display: none;
 }
 
 .textoSobre {
