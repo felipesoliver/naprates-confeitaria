@@ -270,35 +270,62 @@ main {
     font-size: 2em;
     font-weight: 300;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: .4em;
 }
 
-.nossosDocesTexto P {
-    width: 90%;
+.nossosDocesTexto p {
+    margin-bottom: 2em;
+    width: 70%;
+    font-size: 1.3em;
+    font-weight: 300;
     text-align: center;
-    line-height: 2em;
+    line-height: 1.5em;
 }
 
 .nossosDocesImagens {
-    margin: 2em auto;
+    margin: 2em auto 4em auto;
     width: 90%;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
 
+.nossosDocesCard {
+    width: 22%;
+}
+
 .nossosDocesImagens figure {
-    width: 24%;
+    padding: 30px 0;
+    width: 100%;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background: linear-gradient( 225deg, #f8d89b1a, #dabf8f 90%);
     color: #8d503c;
+    border-radius: 20px;
+
+    -webkit-transform: perspective(100px) translateZ(0);
+    -moz-transform: perspective(100px) translateZ(0);
+    -ms-transform: perspective(100px) translateZ(0);
+    transform: perspective(100px) translateZ(0);
+
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
 }
 
-.nossosDocesImagens img {
-    width: 90%;
+.nossosDocesImagens figure:hover {
+    -webkit-transform: perspective(100px) translateZ(5px);
+    -moz-transform: perspective(100px) translateZ(5px);
+    -ms-transform: perspective(100px) translateZ(5px);
+    transform: perspective(100px) translateZ(5px);
+}
+
+.nossosDocesImagens figure img {
+    width: 80%;
     border-radius: 50%;
     
     -webkit-border: solid 10px #fceccf;
@@ -317,26 +344,29 @@ main {
     transition: all .4s ease-in-out;
 }
 
-.nossosDocesImagens img:hover {
+.nossosDocesImagens figure:hover img {
     border: solid 10px #dac090e1;
 
-    -webkit-transform: perspective(100px) translateZ(8px);
-    -moz-transform: perspective(100px) translateZ(8px);
-    -ms-transform: perspective(100px) translateZ(8px);
-    transform: perspective(100px) translateZ(8px);
+    -webkit-transform: perspective(100px) translateZ(5px);
+    -moz-transform: perspective(100px) translateZ(5px);
+    -ms-transform: perspective(100px) translateZ(5px);
+    transform: perspective(100px) translateZ(5px);
 }
 
 .nossosDocesImagens figcaption {
     margin: 2em auto;
-    font-weight: 600;
+    font-size: .9em;
+    font-weight: 500;
     text-transform: uppercase;
     text-align: center;
-    letter-spacing: .3em;
+    letter-spacing: .2em;
 }
 
 .nossosDocesImagens span {
     width: 80%;
+    font-size: .9em;
     text-align: center;
+    line-height: 25px;
 }
 
 /* section galeria */
@@ -393,7 +423,6 @@ main {
     align-items: center;
     justify-content: flex-end;
     flex-direction: column;
-    background: #dabf8f17;
     border-radius: 15px;
     color: #8d503c;
     cursor: context-menu;
@@ -415,21 +444,13 @@ main {
 }
 
 .servicosContainer:hover {
-    background: #dabf8f;
-    color: #fff;
-
-    background-image: -webkit-linear-gradient( 225deg,  #f8d89b00, #dabf8f00 90%);
-    background-image: -moz-linear-gradient( 225deg, #f8d89b00, #dabf8f00 90%);
-    background-image: -ms-linear-gradient( 225deg, #f8d89b00, #dabf8f00 90%);
-    background-image: linear-gradient( 225deg, #f8d89b00, #dabf8f00 90%);
-
-    -webkit-transform: perspective(100px) translateZ(10px);
-    -moz-transform: perspective(100px) translateZ(10px);
-    -ms-transform: perspective(100px) translateZ(10px);
-    transform: perspective(100px) translateZ(10px);
+    -webkit-transform: perspective(100px) translateZ(6px);
+    -moz-transform: perspective(100px) translateZ(6px);
+    -ms-transform: perspective(100px) translateZ(6px);
+    transform: perspective(100px) translateZ(6px);
 }
 
-.servicosTitulo {
+.servicosContainer .servicosTitulo {
     width: 100%;
     height: 100px;
     display: flex;
@@ -439,6 +460,15 @@ main {
     border-radius: 15px 15px 0 0;
     position: absolute;
     top: 0;
+
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -ms-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+}
+
+.servicosContainer:hover .servicosTitulo {
+    border-bottom: solid 5px #af735e;
 }
 
 .servicosTitulo h3 {
@@ -447,9 +477,10 @@ main {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 3px;
+    text-align: center;
 }
 
-.servicosLogo {
+.servicosContainer .servicosLogo {
     width: 80px;
     height: 80px;
     display: flex;
@@ -458,6 +489,7 @@ main {
     background: #fff;
     box-shadow: 0 1px 6px rgba(65, 46, 21, 0.28);
     border-radius: 50%;
+    box-sizing: content-box;
     position: absolute;
     top: 60px;
     left: 50%;
@@ -466,20 +498,57 @@ main {
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
+
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -ms-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
 }
 
-.servicosLogo img,
-.sacola {
+.servicosContainer:hover .servicosLogo {
+    background: #af735e;
+}
+
+.servicosLogo .img1,
+.servicosLogo .img2,
+.servicosLogo .sacola1,
+.servicosLogo .sacola2 {
     width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    -webkit-transform: translate3d(-50%,-50%,0);
+    -moz-transform: translate3d(-50%,-50%,0);
+    -ms-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
 }
 
-.sacola {
-    margin-left: 10px;
+.servicosContainer .img2,
+.servicosContainer .sacola2 {
+    opacity: 0;
+
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -ms-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
 }
 
-.servicosCartoes p {
+.servicosContainer:hover .img2,
+.servicosContainer:hover .sacola2 {
+    opacity: 1;
+}
+
+.sacola1,
+.sacola2 {
+    margin-left: 5px;
+} 
+
+.servicosContainer p {
     width: 80%;
+    font-size: .9em;
     text-align: center;
+    line-height: 1.5em;
 }
 
 /* SOBRE */
@@ -663,7 +732,7 @@ main {
     color: #dfbf8a;
 }
 
-.social {
+.contatoInfo {
     margin-bottom: 3em;
     display: flex;
     align-items: center;
@@ -672,16 +741,16 @@ main {
     color: #8d503c;
 }
 
-.social ul{
+.contatoInfo ul{
     width: 50%;
 }
 
-.social li {
+.contatoInfo li {
     margin-bottom: 8px;
     font-size: 1.2em;
 }
 
-.tituloSocial {
+.tituloInfo {
     margin-bottom: 30px;
     font-size: 1.4em;
     font-weight: 300;
@@ -689,11 +758,11 @@ main {
     letter-spacing: 10px;
 }
 
-.tituloSocial span {
+.tituloInfo span {
     letter-spacing: initial;
 }
 
-.social span {
+.contatoInfo span {
     font-weight: 700;
 }
 
@@ -710,5 +779,27 @@ footer {
 }
 
 .copyright {
+    font-size: 1em;
     color: #8d503c;
+}
+
+.copyright span {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.social {
+    margin: 5px 30px 0 30px;
+    width: 80px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.social a{
+    width: 25%;
+}
+
+.social img {
+    width: 100%;
 }

@@ -234,12 +234,15 @@
 /* section nossos doces */
 
 .nossosDoces h2 {
+    margin: 2em auto;
     font-size: 1.2em;
     font-weight: 500;
 }
 
 .nossosDoces p {
     width: 80%;
+    font-size: 1em;
+    font-weight: 400;
 }
 
 .nossosDocesImagens {
@@ -247,8 +250,17 @@
     align-items: center;
 }
 
-.nossosDocesImagens figure {
+.nossosDocesCard {
     width: 80%;
+}
+
+.nossosDocesImagens figure {
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.nossosDoces figure img {
+    width: 70%;
 }
 
 .nossosDocesImagens span {
@@ -272,6 +284,14 @@
 
 .servicosCartoes {
     flex-direction: column;
+}
+
+.servicosCartoes h3 {
+    margin: 1.5em auto 3.3em auto;
+}
+
+.servicosCartoes p {
+    line-height: 1.5em;
 }
 
 .servicosCartoes li {
@@ -356,16 +376,33 @@
     width: 35%;
 }
 
-/* Section Social */
+/* Section Info */
 
-.social ul {
+.contatoInfo ul {
     width: 70%;
 }
 
-.social li {
+.contatoInfo li {
     font-size: .8em;
 }
 
-.tituloSocial {
+.tituloInfo {
     font-size: 1em;
+}
+
+/* FOOTER */
+
+footer {
+    height: 160px;
+    flex-direction: column-reverse;
+}
+
+.copyright{
+    margin-bottom: 15px;
+    font-size: .9em;
+}
+
+.social {
+    margin: 15px 0;
+    width: 100px;
 }
