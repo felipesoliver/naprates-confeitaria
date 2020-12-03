@@ -311,14 +311,13 @@
 /* SOBRE */
 
 .containerSobre {
-    padding: 5em 0 4em 0;
-    width: 80%;
+    width: 100%;
 }
 
 .containerSobre h2 {
-    margin-bottom: 0;
+    margin-bottom: 2em;
     font-size: 1.4em;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .infoSobre {
@@ -328,23 +327,12 @@
 
 .quadroImgSobre {
     width: 100%;
-    height: 480px;
+    height: fit-content;
 }
 
 .imgSobre {
-    width: 80%;
-
-    -webkit-transform: translate3d(-50%, -50%, 0);
-    -moz-transform: translate3d(-50%, -50%, 0);
-    -ms-transform: translate3d(-50%, -50%, 0);
-    transform: translate3d(-50%, -50%, 0);
-}
-
-.imgSobre:hover {
-    -webkit-transform: translate3d(-50%, -50%, 0);
-    -moz-transform: translate3d(-50%, -50%, 0);
-    -ms-transform: translate3d(-50%, -50%, 0);
-    transform: translate3d(-50%, -50%, 0);
+    width: 100%;
+    position: initial;
 }
 
 .quadroImgSobre .img1 {
@@ -365,6 +353,7 @@
 }
 
 .textoSobre h3 {
+    margin: 3em auto 1em auto;
     font-size: 1.1em;
     font-weight: 600;
 }
@@ -375,14 +364,23 @@
 
 /* CONTATO */
 
-/* Section Contato */
+.contatoContainer {
+    width: 80%;
+    margin-left: 0;
+    flex-direction: column;
+}
 
-.contatoForm h2 {
-    width: 70%;
+.contatoForm {
+    width: 100%;
+}
+
+.contato h2 {
+    margin: 2em 0;
+    width: 80%;
 }
 
 .contatoForm form {
-    width: 80%;
+    width: 100%;
 }
 
 .contatoForm input,
@@ -394,10 +392,12 @@
     width: 35%;
 }
 
-/* Section Info */
+.contatoInfo {
+    width: 100%;
+}
 
 .contatoInfo ul {
-    width: 80%;
+    width: 100%;
 }
 
 .contatoInfo li {

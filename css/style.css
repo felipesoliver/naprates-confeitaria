@@ -560,22 +560,28 @@ main {
 
 .containerSobre {
     margin: 6em auto 0 auto;
-    padding: 4em 0;
-    width: 70%;
+    padding: 3em 0;
+    width: 100%;
     height: fit-content;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     color: #8d503c;
 }
 
 .containerSobre h2 {
+    width: 70%;
     margin-bottom: 50px;
     font-size: 1.5em;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 10px;
+    text-align: left;
 }
 
 .infoSobre {
+    margin: 0 auto;
+    width: 70%;
     align-items: flex-start;
     justify-content: space-between;
 }
@@ -645,10 +651,25 @@ main {
 
 /* CONTATO */
 
-.contatoForm {
+.contato {
     margin-top: 6em;
-    padding: 3em 0;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contatoContainer {
+    margin-left: 90px;
+    width: 75%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.contatoForm {
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -656,18 +677,21 @@ main {
     color: #8d503c;
 }
 
-.contatoForm h2 {
-    margin-bottom: 2em;
+.contato h2 {
+    margin: 2em 0 2em 90px;
     width: 75%;
     font-size: 1.5em;
     font-weight: 500;
     text-align: left;
     text-transform: uppercase;
     letter-spacing: 10px;
+    color: #8d503c;
+
 }
 
 .contatoForm form {
-    width: 50%;
+    margin-bottom: 2em;
+    width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -690,6 +714,10 @@ main {
     border-radius: 5px;
     outline: none;
     resize: none;
+}
+
+.contatoForm textarea {
+    height: 150px;
 }
 
 .inputA,
@@ -733,6 +761,7 @@ main {
 }
 
 .contatoInfo {
+    width: 50%;
     margin-bottom: 3em;
     display: flex;
     align-items: center;
@@ -742,7 +771,7 @@ main {
 }
 
 .contatoInfo ul{
-    width: 50%;
+    width: 70%;
 }
 
 .contatoInfo li {
@@ -752,10 +781,10 @@ main {
 
 .tituloInfo {
     margin-bottom: 30px;
-    font-size: 1.4em;
+    font-size: 1em;
     font-weight: 300;
     text-transform: uppercase;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
 }
 
 .tituloInfo span {
@@ -764,6 +793,10 @@ main {
 
 .contatoInfo span {
     font-weight: 700;
+}
+
+.contatoInfo p {
+    font-size: .9em;
 }
 
 /* footer */
