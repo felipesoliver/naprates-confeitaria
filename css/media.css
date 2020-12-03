@@ -382,7 +382,12 @@
 }
 
 .contatoForm form {
-    width: 70%;
+    width: 80%;
+}
+
+.contatoForm input,
+.contatoForm textarea {
+    font-size: 15px;
 }
 
 .botaoEnviar {
@@ -392,15 +397,16 @@
 /* Section Info */
 
 .contatoInfo ul {
-    width: 70%;
+    width: 80%;
 }
 
 .contatoInfo li {
-    font-size: .8em;
+    font-size: 13px;
 }
 
 .tituloInfo {
-    font-size: 1em;
+    font-size: 14px;
+    letter-spacing: 5px;
 }
 
 /* FOOTER */
