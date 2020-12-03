@@ -360,6 +360,10 @@
     font-weight: 600;
 }
 
+.textoSobre p {
+    font-size: .9em;
+}
+
 /* CONTATO */
 
 /* Section Contato */
