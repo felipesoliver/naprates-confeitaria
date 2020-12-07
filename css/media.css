@@ -251,7 +251,7 @@
 }
 
 .nossosDocesCard {
-    width: 80%;
+    width: 90%;
 }
 
 .nossosDocesImagens figure {
@@ -260,7 +260,7 @@
 }
 
 .nossosDoces figure img {
-    width: 70%;
+    width: 60%;
 }
 
 .nossosDocesImagens span {
@@ -302,9 +302,9 @@
 }
 
 .servicosContainer {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     padding-bottom: 70px;
-    width: 80%;
+    width: 90%;
     height: 300px;
 }
 
