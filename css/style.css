@@ -550,6 +550,172 @@ main {
     text-align: center;
     line-height: 1.5em;
 }
+/* CATÁLOGO */
+
+.catalogo {
+    margin: 6em auto 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tituloCatalogo {
+    margin: 2em 0;
+    width: 68%;
+    font-size: 1.5em;
+    font-weight: 500;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-align: left;
+    color: #8d503c;
+}
+
+.listaCatalogo {
+    width: fit-content;
+}
+.itensCatalogo {
+    margin-bottom: 3em;
+    display: flex;
+    align-items: flex-start;
+}
+
+.tipo1 {
+    justify-content: flex-start;
+}
+
+.tipo2 {
+    justify-content: flex-end;
+}
+
+.slider {
+    width: 600px;
+    height: 600px;
+}
+
+.slider1::after,
+.slider2::after,
+.slider3::after,
+.slider4::after,
+.slider5::after {
+    position: absolute;
+    bottom: 60px;
+    left: 44px;
+    width: 50%;
+    display: block;
+    font-size: 3.6em;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: #fff;
+}
+
+.slider1::after{
+    content: 'Bolos decorados.';
+}
+
+.slider2::after{
+    content: 'Doces finos.';
+}
+
+.slider3::after{
+    content: 'Doces tradição.';
+}
+
+.slider4::after{
+    content: 'Naked Cakes.';
+}
+
+.slider5::after{
+    content: 'Datas especiais.';
+}
+
+.slider img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.infoCatalogo {
+    position: relative;
+    margin: 0 10px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 10px;
+    background: linear-gradient(315deg, #fdf5e6, #d6b986 130%);
+}
+
+.infoCatalogo::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 15px;
+    height: 70px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.infoCatalogo span {
+    margin-top: 35px;
+    width: 66%;
+    line-height: 25px;
+    color: #8d503c;
+}
+
+.catalogoBtn {
+    position: relative;
+    margin-top: 35px;
+    padding: 10px;
+    width: 66%;
+    font-size: .8em;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+    background: #8d503c;
+    border-radius: 10px;
+    color: #fff;
+
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.catalogoBtn:hover {
+    background: #c79483;
+    color: #8d503c;
+}
+
+.catalogoBtn::after {
+    content: '\2794';
+    opacity: 0;
+    position: absolute;
+    top: 46%;
+    right: 20%;
+    color: #8d503c;
+
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.catalogoBtn:hover::after {
+    opacity: 1;
+    right: 3%;
+}
 
 /* SOBRE */
 
@@ -708,10 +874,10 @@ main {
 .contatoForm input,
 .contatoForm textarea {
     margin-bottom:15px;
-    padding: 8px;
+    padding: 10px;
     font-family: 'Montserrat', sans-serif;;
-    font-size: 1em;
-    border-radius: 5px;
+    font-size: .8em;
+    border-radius: 10px;
     outline: none;
     resize: none;
 }
@@ -744,7 +910,8 @@ main {
     background: #dfc69c;
     background-image: linear-gradient(225deg, transparent, #af5734b2 130%);
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
+    letter-spacing: 5px;
     border: none;
     cursor: pointer;
     color: #fff;
@@ -776,12 +943,12 @@ main {
 
 .contatoInfo li {
     margin-bottom: 8px;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .tituloInfo {
     margin-bottom: 30px;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 5px;
