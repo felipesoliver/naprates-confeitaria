@@ -1,12 +1,8 @@
-/* paralax / rellax */
-
-var rellax = new Rellax('.rellax');
-
-/* animation on scroll */
+// ANIMATION ON SCROLL
 
 AOS.init();
 
-/* show / hide menu animation */
+// SHOW / HIDE MENU ANIMATION
 
 let fadeNavBar = window.pageYOffset;
 
@@ -21,7 +17,7 @@ window.onscroll = function() {
     fadeNavBar = showNavBar;
 }
 
-/* burger menu */
+// BURGER MENU
 
 const menuBtn = document.querySelector('.menu-btn');
 let menuOpen = false;
@@ -34,3 +30,7 @@ menuBtn.addEventListener('click', () => {
         menuOpen = false;
     }
 });
+
+// PARALAX / RELLAX
+
+var rellax = new Rellax('.rellax');

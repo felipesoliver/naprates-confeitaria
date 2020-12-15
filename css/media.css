@@ -174,7 +174,7 @@
 
 .banner {
     height: 102vh;
-    background-image: url("../images/chocolatcake1.jpg");
+    background-image: url("../images/chocolatcake.jpg");
 }
 
 .quadroDeResumos {
@@ -306,6 +306,23 @@
     padding-bottom: 70px;
     width: 90%;
     height: 300px;
+}
+
+/* CATÁLOGO */
+
+.tipo1 {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.tipo2 {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+}
+
+.slider {
+    width: 100%;
+    height: 500px;
 }
 
 /* SOBRE */

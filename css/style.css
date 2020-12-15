@@ -378,7 +378,7 @@ main {
     background: #f9edd6;
 }
 
-.carousel-cell {
+.carouselItem {
     margin-right: 10px;
     width: 80%; 
     height: 500px; 
@@ -632,7 +632,7 @@ main {
 }
 
 .slider img {
-    width: 100%;
+    width: 600px;
     border-radius: 20px;
 }
 
