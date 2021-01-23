@@ -151,7 +151,16 @@
     opacity: 0;
     padding: 15px 0;
     width: 60%;
+    height: fit-content;
     text-align: center;
+}
+
+.navMenuItens a {
+    height: 40px;
+}
+
+.navMenuItens::after {
+    display: none;
 }
 
 #check:checked ~ .pageList .navMenuItens {
