@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/media.css" media="screen and (max-width: 768px)">
         <link rel="stylesheet" href="css/aos.css">
-        <link rel="stylesheet" href="css/flickity.css">
+        <link rel="stylesheet" href="css/splide-sea-green.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap">
         <title>Na Prates - Confeitaria | Catálogo</title>
     </head>
@@ -20,23 +20,20 @@
                         <hr>
                         <p class="navSubTitulo">Confeitaria Artesanal</p>
                     </a>
-                    <input type="checkbox" id="check">
-                    <label for="check">
-                        <div class="menu-btn">
-                            <div class="menu-btn__burger"></div>
-                        </div>
-                    </label>
+                    <div class="menu-btn">
+                        <div class="menu-btn__burger"></div>
+                    </div>
                     <ul class="pageList">
-                        <li class="navMenuItens">
+                        <li class="navMenuItens item1">
                             <a href="index.html">Início</a>
                         </li>
-                        <li class="navMenuItens">
+                        <li class="navMenuItens item2">
                             <a href="catalogo.html">Catálogo</a>
                         </li>
-                        <li class="navMenuItens">
+                        <li class="navMenuItens item3">
                             <a href="sobre.html">Sobre</a>
                         </li>
-                        <li class="navMenuItens">
+                        <li class="navMenuItens item4">
                             <a href="contato.html">Contato</a>
                         </li>
                     </ul>
@@ -46,63 +43,87 @@
         <main>
             <section class="catalogo">
                 <h2 class="tituloCatalogo" data-aos="fade-down" data-aos-duration="2000">Catálogo</h2>
-                <ul class="listaCatalogo">
-                    <li class="itensCatalogo tipo1" data-aos="zoom-out" data-aos-duration="1500">
-                        <div class="main-carousel slider slider1" data-flickity='{ "cellAlign": "center", "contain": true, "autoPlay": true, "autoPlay": 3000, "pageDots": false, "prevNextButtons": false, "fade": true }'>
-                            <div class="carousel-cell"><img src="images/bolosdecorados1.jpg" alt="Imagem de um bolo de frutas vermelhas"></div>
-                            <div class="carousel-cell"><img src="images/bolosdecorados2.jpg" alt="Imagem de um bolo de chocolate"></div>
-                            <div class="carousel-cell"><img src="images/bolosdecorados3.jpg" alt="Imagem de brigadeiros"></div>
-                        </div>
-                        <div class="infoCatalogo">
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum officia deserunt dolores facilis! Quos, porro ipsa. Officiis iste sed vitae!</span>
-                            <a class="catalogoBtn" href="https://api.whatsapp.com/send?phone=5511996573915&text=Ol%C3%A1%20N%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20bolos%20decorados" target="blank">Encomendar</a>
-                        </div>
-                    </li>
-                    <li class="itensCatalogo tipo2" data-aos="zoom-out" data-aos-duration="1500">
-                        <div class="infoCatalogo">
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum officia deserunt dolores facilis! Quos, porro ipsa. Officiis iste sed vitae!</span>
-                            <a class="catalogoBtn" href="https://api.whatsapp.com/send?phone=5511996573915&text=Ol%C3%A1%20N%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20doces%20finos" target="blank">Encomendar</a>
-                        </div>
-                        <div class="main-carousel slider slider2" data-flickity='{ "cellAlign": "center", "contain": true, "autoPlay": true, "autoPlay": 3000, "pageDots": false, "prevNextButtons": false, "fade": true }'>
-                            <div class="carousel-cell"><img src="images/docesfinos1.jpg" alt="Imagem de um bolo de frutas vermelhas"></div>
-                            <div class="carousel-cell"><img src="images/docesfinos2.jpg" alt="Imagem de um bolo de chocolate"></div>
-                            <div class="carousel-cell"><img src="images/docesfinos3.jpg" alt="Imagem de brigadeiros"></div>
-                        </div>
-                    </li>
-                    <li class="itensCatalogo tipo1" data-aos="zoom-out" data-aos-duration="1500">
-                        <div class="main-carousel slider slider3" data-flickity='{ "cellAlign": "center", "contain": true, "autoPlay": true, "autoPlay": 3000, "pageDots": false, "prevNextButtons": false, "fade": true }'>
-                            <div class="carousel-cell"><img src="images/docestradicao1.jpg" alt="Imagem de um bolo de frutas vermelhas"></div>
-                            <div class="carousel-cell"><img src="images/docestradicao2.jpg" alt="Imagem de um bolo de chocolate"></div>
-                            <div class="carousel-cell"><img src="images/docestradicao3.jpg" alt="Imagem de brigadeiros"></div>
-                        </div>
-                        <div class="infoCatalogo">
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum officia deserunt dolores facilis! Quos, porro ipsa. Officiis iste sed vitae!</span>
-                            <a class="catalogoBtn" href="https://api.whatsapp.com/send?phone=5511996573915&text=Ol%C3%A1%20N%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20doces%20tradi%C3%A7%C3%A3o" target="blank">Encomendar</a>
-                        </div>
-                    </li>
-                    <li class="itensCatalogo tipo2" data-aos="zoom-out" data-aos-duration="1500">
-                        <div class="infoCatalogo">
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum officia deserunt dolores facilis! Quos, porro ipsa. Officiis iste sed vitae!</span>
-                            <a class="catalogoBtn" href="https://api.whatsapp.com/send?phone=5511996573915&text=Ol%C3%A1%20N%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20naked%20cakes" target="blank">Encomendar</a>
-                        </div>
-                        <div class="main-carousel slider slider4" data-flickity='{ "cellAlign": "center", "contain": true, "autoPlay": true, "autoPlay": 3000, "pageDots": false, "prevNextButtons": false, "fade": true }'>
-                            <div class="carousel-cell"><img src="images/nakedcake1.jpg" alt="Imagem de um bolo de frutas vermelhas"></div>
-                            <div class="carousel-cell"><img src="images/nakedcake2.jpg" alt="Imagem de um bolo de chocolate"></div>
-                            <div class="carousel-cell"><img src="images/nakedcake3.jpg" alt="Imagem de brigadeiros"></div>
-                        </div>
-                    </li>
-                    <li class="itensCatalogo tipo1" data-aos="zoom-out" data-aos-duration="1500">
-                        <div class="main-carousel slider slider5" data-flickity='{ "cellAlign": "center", "contain": true, "autoPlay": true, "autoPlay": 3000, "pageDots": false, "prevNextButtons": false, "fade": true }'>
-                            <div class="carousel-cell"><img src="images/datasespeciais1.jpg" alt="Imagem de um bolo de frutas vermelhas"></div>
-                            <div class="carousel-cell"><img src="images/datasespeciais2.jpg" alt="Imagem de um bolo de chocolate"></div>
-                            <div class="carousel-cell"><img src="images/datasespeciais3.jpg" alt="Imagem de brigadeiros"></div>
-                        </div>
-                        <div class="infoCatalogo">
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum officia deserunt dolores facilis! Quos, porro ipsa. Officiis iste sed vitae!</span>
-                            <a class="catalogoBtn" href="https://api.whatsapp.com/send?phone=5511996573915&text=Ol%C3%A1%20N%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20doces%20para%20datas%20especiais" target="blank">Encomendar</a>
-                        </div>
-                    </li>
-                </ul>
+                <div class="splide splide1" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="splide__track">
+                        <ul class="splide__list listaCatalogo">
+                            <li class="splide__slide itensCatalogo">
+                                <div class="splide splide2 slide1">
+                                    <div class="splide__track">
+                                        <div class="splide__list">
+                                            <div class="splide__slide"><img src="images/bolosdecorados1.jpg" alt="Imagem de um bolo de morango"></div>
+                                            <div class="splide__slide"><img src="images/bolosdecorados2.jpg" alt="Imagem de um bolo com fresias amarelas"></div>
+                                            <div class="splide__slide"><img src="images/bolosdecorados3.jpg" alt="Imagem de um bolo com uma rosa"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="infoCatalogo">
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum officia deserunt dolores facilis! Quos, porro ipsa. Officiis iste sed vitae!</span>
+                                    <a class="catalogoBtn" href="https://api.whatsapp.com/send?phone=5511996573915&text=Ol%C3%A1%20N%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20bolos%20decorados" target="blank">Encomendar</a>
+                                </div>
+                            </li>
+                            <li class="splide__slide itensCatalogo" data-aos="zoom-out" data-aos-duration="1500">
+                                <div class="splide splide2 slide2">
+                                    <div class="splide__track">
+                                        <div class="splide__list">
+                                            <div class="splide__slide"><img src="images/docesfinos1.jpg" alt="Imagem de brigadeiros"></div>
+                                            <div class="splide__slide"><img src="images/docesfinos2.jpg" alt="Imagem de brigadeiros com fissales"></div>
+                                            <div class="splide__slide"><img src="images/docesfinos3.jpg" alt="Imagem de doces finos"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="infoCatalogo">
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum officia deserunt dolores facilis! Quos, porro ipsa. Officiis iste sed vitae!</span>
+                                    <a class="catalogoBtn" href="https://api.whatsapp.com/send?phone=5511996573915&text=Ol%C3%A1%20N%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20doces%20finos" target="blank">Encomendar</a>
+                                </div>
+                            </li>
+                            <li class="splide__slide itensCatalogo" data-aos="zoom-out" data-aos-duration="1500">
+                                <div class="splide splide2 slide3">
+                                    <div class="splide__track">
+                                        <div class="splide__list">
+                                            <div class="splide__slide"><img src="images/docestradicao1.jpg" alt="Imagem de um bolo de frutas vermelhas"></div>
+                                            <div class="splide__slide"><img src="images/docestradicao2.jpg" alt="Imagem de um bolo de chocolate"></div>
+                                            <div class="splide__slide"><img src="images/docestradicao3.jpg" alt="Imagem de brigadeiros"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="infoCatalogo">
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum officia deserunt dolores facilis! Quos, porro ipsa. Officiis iste sed vitae!</span>
+                                    <a class="catalogoBtn" href="https://api.whatsapp.com/send?phone=5511996573915&text=Ol%C3%A1%20N%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20doces%20tradi%C3%A7%C3%A3o" target="blank">Encomendar</a>
+                                </div>
+                            </li>
+                            <li class="splide__slide itensCatalogo" data-aos="zoom-out" data-aos-duration="1500">
+                                <div class="splide splide2 slide4">
+                                    <div class="splide__track">
+                                        <div class="splide__list">
+                                            <div class="splide__slide"><img src="images/nakedcake1.jpg" alt="Imagem de um bolo de frutas vermelhas"></div>
+                                            <div class="splide__slide"><img src="images/nakedcake2.jpg" alt="Imagem de um bolo de chocolate"></div>
+                                            <div class="splide__slide"><img src="images/nakedcake3.jpg" alt="Imagem de brigadeiros"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="infoCatalogo">
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum officia deserunt dolores facilis! Quos, porro ipsa. Officiis iste sed vitae!</span>
+                                    <a class="catalogoBtn" href="https://api.whatsapp.com/send?phone=5511996573915&text=Ol%C3%A1%20N%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20naked%20cakes" target="blank">Encomendar</a>
+                                </div>
+                            </li>
+                            <li class="splide__slide itensCatalogo" data-aos="zoom-out" data-aos-duration="1500">
+                                <div class="splide splide2 slide5">
+                                    <div class="splide__track">
+                                        <div class="splide__list">
+                                            <div class="splide__slide"><img src="images/datasespeciais1.jpg" alt="Imagem de um bolo de frutas vermelhas"></div>
+                                            <div class="splide__slide"><img src="images/datasespeciais2.jpg" alt="Imagem de um bolo de chocolate"></div>
+                                            <div class="splide__slide"><img src="images/datasespeciais3.jpg" alt="Imagem de brigadeiros"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="infoCatalogo">
+                                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum officia deserunt dolores facilis! Quos, porro ipsa. Officiis iste sed vitae!</span>
+                                    <a class="catalogoBtn" href="https://api.whatsapp.com/send?phone=5511996573915&text=Ol%C3%A1%20N%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20doces%20para%20datas%20especiais" target="blank">Encomendar</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </section>
         </main>
         <footer data-aos="fade-in" data-aos-duration="1000">
@@ -114,9 +135,8 @@
             </div>
         </footer>
         <script src="js/aos.js"></script>
-        <script src="js/rellax.js"></script>
-        <script src="js/flickity.pkgd.min.js"></script>
-        <script src="js/flickity-fade.js"></script>
+        <script src="js/splide.js"></script>
+        <script src="js/slider.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>

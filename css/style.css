@@ -23,6 +23,39 @@ main {
     100% { opacity: 1;}
 }
 
+@keyframes shakeLevel {
+    0% {
+        -webkit-transform: translate(0,-50%);
+        -moz-transform: translate(0,-50%);
+        -ms-transform: translate(0,-50%);
+        transform: translate(0,-50%);
+    }
+    25% {
+        -webkit-transform: translate(5px,-50%);
+        -moz-transform: translate(5px,-50%);
+        -ms-transform: translate(5px,-50%);
+        transform: translate(5px,-50%);
+    }
+    50% {
+        -webkit-transform: translate(0,-50%);
+        -moz-transform: translate(0,-50%);
+        -ms-transform: translate(0,-50%);
+        transform: translate(0,-50%);
+    }
+    75% {
+        -webkit-transform: translate(8px,-50%);
+        -moz-transform: translate(8px,-50%);
+        -ms-transform: translate(8px,-50%);
+        transform: translate(8px,-50%);
+    }
+    100% {
+        -webkit-transform: translate(0,-50%);
+        -moz-transform: translate(0,-50%);
+        -ms-transform: translate(0,-50%);
+        transform: translate(0,-50%);
+    }
+}
+
 /* menu principal */
 
 .container {
@@ -57,10 +90,6 @@ main {
     font-weight: 300;
     color: #8d503c;
     text-decoration: none;
-}
-
-#check {
-    display: none;
 }
 
 .navTitulo {
@@ -337,6 +366,7 @@ main {
     background: linear-gradient( 225deg, #f8d89b1a, #dabf8f 90%);
     color: #8d503c;
     border-radius: 20px;
+    cursor: context-menu;
 
     -webkit-transform: perspective(100px) translateZ(0);
     -moz-transform: perspective(100px) translateZ(0);
@@ -595,7 +625,7 @@ main {
 
 .tituloCatalogo {
     margin: 2em 0;
-    width: 68%;
+    width: 70%;
     font-size: 1.5em;
     font-weight: 500;
     letter-spacing: 10px;
@@ -604,73 +634,68 @@ main {
     color: #8d503c;
 }
 
-.listaCatalogo {
-    width: fit-content;
+.splide1 {
+    width: 80%;
 }
+
+.listaCatalogo {
+    width: 100%;
+}
+
 .itensCatalogo {
-    margin-bottom: 3em;
+    width: 100%;
     display: flex;
     align-items: flex-start;
+    justify-content: center;
 }
 
-.tipo1 {
-    justify-content: flex-start;
+.splide2 {
+    margin-bottom: 100px;
+    width: 46%;
 }
 
-.tipo2 {
-    justify-content: flex-end;
-}
-
-.slider {
-    width: 600px;
-    height: 600px;
-}
-
-.slider1::after,
-.slider2::after,
-.slider3::after,
-.slider4::after,
-.slider5::after {
+.slide1::after,
+.slide2::after,
+.slide3::after,
+.slide4::after,
+.slide5::after {
     position: absolute;
-    bottom: 60px;
-    left: 44px;
-    width: 50%;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
     display: block;
-    font-size: 3.6em;
+    font-size: 2.6em;
     font-weight: 800;
     text-transform: uppercase;
+    text-shadow: 3px 3px 5px #00000046;
     letter-spacing: 10px;
     color: #fff;
 }
 
-.slider1::after{
+.slide1::after{
     content: 'Bolos decorados.';
 }
 
-.slider2::after{
+.slide2::after{
     content: 'Doces finos.';
 }
 
-.slider3::after{
+.slide3::after{
     content: 'Doces tradição.';
 }
 
-.slider4::after{
+.slide4::after{
     content: 'Naked Cakes.';
 }
 
-.slider5::after{
+.slide5::after{
     content: 'Datas especiais.';
-}
-
-.slider img {
-    width: 600px;
-    border-radius: 20px;
 }
 
 .infoCatalogo {
     position: relative;
-    margin: 0 10px;
+    margin: 0 0 0 30px;
     width: 300px;
     height: 300px;
     display: flex;
@@ -678,6 +703,7 @@ main {
     justify-content: flex-start;
     flex-direction: column;
     border-radius: 10px;
+    text-align: center;
     background: linear-gradient(315deg, #fdf5e6, #d6b986 130%);
 }
 
@@ -703,7 +729,7 @@ main {
     position: relative;
     margin-top: 35px;
     padding: 10px;
-    width: 66%;
+    width: 72%;
     font-size: .8em;
     font-weight: 500;
     text-decoration: none;
@@ -714,39 +740,41 @@ main {
     border-radius: 10px;
     color: #fff;
 
-    -webkit-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    -ms-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0ms;
+    -moz-transition: all .4s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0ms;
+    -ms-transition: all .4s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0ms;
+    transition: all .4s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0ms;
 }
 
 .catalogoBtn:hover {
-    background: #c79483;
+    background: #cc8b73;
     color: #8d503c;
 }
 
 .catalogoBtn::after {
     content: '\2794';
-    opacity: 0;
     position: absolute;
     top: 46%;
-    right: 20%;
-    color: #8d503c;
+    right: 5%;
+    color: #fff;
+    -webkit-animation: shakeLevel 1.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0ms infinite;
+    -moz-animation: shakeLevel 1.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0ms infinite;
+    -ms-animation: shakeLevel 1.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0ms infinite;
+    animation: shakeLevel 1.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0ms infinite;
 
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 
-    -webkit-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    -ms-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0ms;
+    -moz-transition: all .4s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0ms;
+    -ms-transition: all .4s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0ms;
+    transition: all .4s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0ms;
 }
 
 .catalogoBtn:hover::after {
-    opacity: 1;
-    right: 3%;
+    color: #8d503c;
 }
 
 /* SOBRE */
@@ -938,24 +966,29 @@ main {
 }
 
 .botaoEnviar {
-    width: 25%;
-    background: #dfc69c;
-    background-image: linear-gradient(225deg, transparent, #af5734b2 130%);
-    text-transform: uppercase;
+    opacity: 1;
+    position: relative;
+    padding: 10px;
+    width: 30%;
+    font-size: .8em;
     font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
     letter-spacing: 5px;
+    background: #8d503c;
+    border-radius: 10px;
     border: none;
     cursor: pointer;
     color: #fff;
 
-    -webkit-transition: all .6s ease-in-out;
-    -moz-transition: all .6s ease-in-out;
-    -ms-transition: all .6s ease-in-out;
-    transition: all .6s ease-in-out;
+    -webkit-transition: all .4s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0ms;
+    -moz-transition: all .4s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0ms;
+    -ms-transition: all .4s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0ms;
+    transition: all .4s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0ms;
 }
 
 .botaoEnviar:hover {
-    background: #8d503c;
     color: #dfbf8a;
 }
 
