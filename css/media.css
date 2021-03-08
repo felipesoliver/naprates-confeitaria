@@ -402,6 +402,7 @@
 
 .catalogoBtn {
     padding: 16px;
+    width: 78%;
 }
 
 .catalogoBtn:hover {
@@ -410,7 +411,7 @@
 }
 
 .catalogoBtn::after {
-    right: 7%;
+    top: 50%;
 }
 
 .catalogoBtn:hover::after {
